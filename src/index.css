@@ -1,5 +1,10 @@
 body {
-  background-color: #eee8d2;
+  background: radial-gradient(73% 147%, #eadfdf 59%, #ece2df 100%),
+    radial-gradient(
+      91% 146%,
+      rgba(255, 255, 255, 0.5) 47%,
+      rgba(0, 0, 0, 0.5) 100%
+    );
   font-family: "Old Standard TT", serif;
 }
 .container {
@@ -10,9 +15,10 @@ body {
 /* Header */
 h1 {
   text-align: center;
-  font-size: 36px;
+  font-size: 50px;
   line-height: 1.5;
   font-weight: 700;
+  margin-bottom: 0px;
 }
 .form-container {
   padding: 30px;
@@ -52,11 +58,22 @@ form {
   font-family: "Old Standard TT", serif;
   font-weight: 400;
   font-style: normal;
+  transition: ease-in-out;
+  transition-duration: 0.4s;
+}
+.submit-button:hover {
+  cursor: pointer;
+  background-color: #803a30;
 }
 img {
   width: 100%;
   margin-bottom: 0px;
   border-radius: 10px 10px 0px 0px;
+}
+p {
+  margin: 0px 90px 30px 90px;
+  text-align: center;
+  line-height: 1.5;
 }
 
 /* Reply */
@@ -116,4 +133,8 @@ footer {
   margin: 20px 0px;
   text-align: center;
   font-size: 13px;
+}
+a {
+  text-decoration: none;
+  color: #ba5747;
 }
