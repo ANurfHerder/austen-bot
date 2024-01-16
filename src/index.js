@@ -17,6 +17,9 @@ function generateReply(event) {
     "You are Mr. Darcy from Pride and Prejudice. Your task is to generate a letter reply in the voice of Mr. Darcy. The structure of the reply must be in letter format. Follow the user instructions. When inputing the date please use the current date and do not put brackets around names. ";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
+  let replyElement = document.querySelector("#reply");
+  replyElement.classList.remove("hidden");
+
   axios.get(apiUrl).then(displayReply);
 }
 

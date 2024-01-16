@@ -21,27 +21,36 @@
   <body>
     <div class="container">
       <header>
-        <h1>Inquire Darcy</h1>
+        <h1>Dear Darcy,</h1>
       </header>
       <main>
         <section>
           <img src="images/darcy.jpg" />
-          <form id="reply-generator">
-            <input
-              type="text"
-              placeholder="Enter chat"
-              autofocus
-              required
-              autocomplete="off"
-              class="instructions"
-              id="user-instructions"
-            />
-            <input type="submit" class="submit-button" />
-          </form>
+          <div class="form-container">
+            <form id="reply-generator">
+              <input
+                type="text"
+                placeholder="Write a letter to Mr. Darcy"
+                autofocus
+                required
+                autocomplete="off"
+                class="instructions"
+                id="user-instructions"
+              />
+              <input type="submit" class="submit-button" />
+            </form>
+            <small class="hint">i.e. Dear Darcy, I have been...</small>
+          </div>
         </section>
         <section>
-          <div class="chat-reply" id="reply">
-            hereas recognition of the inherent dignity
+          <div class="chat-reply hidden" id="reply">
+            Delivering Letter....
+            <div class="horse-movement">
+              <div class="horse">
+                <img src="images/horse.png" />
+              </div>
+            </div>
+            </div>
           </div>
         </section>
       </main>
