@@ -14,6 +14,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 40px;
+  margin: 0px 60px;
 }
 
 /* Header */
@@ -220,10 +221,6 @@ a {
   p {
     margin: 50px 200px;
   }
-  .left {
-    max-width: 400px;
-    margin: 0 auto;
-  }
 }
 @media (max-width: 800px) {
   h1 {
@@ -262,12 +259,5 @@ a {
   }
   .grid-2 {
     grid-template-columns: 1fr;
-  }
-  .left {
-    max-width: 300px;
-  }
-  .right {
-    max-width: 300px;
-    margin: 0 auto;
   }
 }
